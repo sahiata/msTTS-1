@@ -24,7 +24,7 @@ After downloading, the model files should be inside the `models/` folder in the 
 ```text
 msTTS-1/
 │
-├── models/                     <-- Downloaded model files (not in the repo)
+├── models/                     <-- Download from Releases (see "Download the model")
 │   ├── model.onnx              <-- Piper ONNX neural model
 │   └── model.onnx.json         <-- Piper voice configuration file
 │
