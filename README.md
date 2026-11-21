@@ -2,6 +2,21 @@
 
 This repository contains setup instructions, model files, and training guidance for running and fine-tuning **Piper TTS**.
 
+## **⬇️ Download the model**
+
+The trained model files are not stored in the repository. They are attached to the [v1.0.0 release](https://github.com/sahiata/msTTS-1/releases/tag/v1.0.0):
+
+| File | Size |
+|---|---|
+| `model.onnx` | ~61 MB |
+| `model.onnx.json` | ~8 KB |
+
+```bash
+mkdir -p models
+wget -P models https://github.com/sahiata/msTTS-1/releases/download/v1.0.0/model.onnx
+wget -P models https://github.com/sahiata/msTTS-1/releases/download/v1.0.0/model.onnx.json
+```
+
 ## **📁 Directory Structure**
 
 Place your trained model files inside the models/ folder in the repository root:  
