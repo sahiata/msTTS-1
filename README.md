@@ -19,36 +19,48 @@ wget -P models https://github.com/sahiata/msTTS-1/releases/download/v1.0.0/model
 
 ## **📁 Directory Structure**
 
-Place your trained model files inside the models/ folder in the repository root:  
-`my-piper-project/`  
-`│`  
-`├── models/                     <-- Place your model files here!`  
-`│   ├── model.onnx              <-- Piper ONNX neural model`  
-`│   └── model.onnx.json         <-- Piper voice configuration file`  
-`│`  
-`├── README.md                   <-- Project overview and usage`  
-`├── training.md                 <-- Model training & fine-tuning guide`  
-`├── INSTALLATION.md             <-- Setup & dependency installation`  
-`└── VERSION.md                  <-- Project version tracking`
+After downloading, the model files should be inside the `models/` folder in the repository root:
+
+```text
+msTTS-1/
+│
+├── models/                     <-- Downloaded model files (not in the repo)
+│   ├── model.onnx              <-- Piper ONNX neural model
+│   └── model.onnx.json         <-- Piper voice configuration file
+│
+├── README.md                   <-- Project overview and usage
+├── training.md                 <-- Model training & fine-tuning guide
+├── INSTALLATION.md             <-- Setup & dependency installation
+├── requirements.txt            <-- Python dependencies
+└── VERSION.md                  <-- Project version tracking
+```
 
 ## **🚀 Quick Start**
 
-### **1\. Model Directory Setup**
+### **1. Get the model files**
 
-Create a models/ directory in the project root and place both your .onnx model and its corresponding .onnx.json config file inside it:  
-`mkdir -p models`  
-`# Copy your model.onnx and model.onnx.json into models/`
+Download `model.onnx` and `model.onnx.json` from the [v1.0.0 release](https://github.com/sahiata/msTTS-1/releases/tag/v1.0.0) into the `models/` folder:
 
-### **2\. Running Inference**
+```bash
+mkdir -p models
+wget -P models https://github.com/sahiata/msTTS-1/releases/download/v1.0.0/model.onnx
+wget -P models https://github.com/sahiata/msTTS-1/releases/download/v1.0.0/model.onnx.json
+```
 
-Once your model files are placed in models/, you can run Piper TTS via the command line:  
-`echo "Hello world, this is a test using Piper TTS." | piper \`  
-  `--model models/model.onnx \`  
-  `--config models/model.onnx.json \`  
-  `--output_file output.wav`
+### **2. Running Inference**
+
+Once the model files are in `models/`, you can run Piper TTS from the command line:
+
+```bash
+echo "Hello world, this is a test using Piper TTS." | piper \
+  --model models/model.onnx \
+  --config models/model.onnx.json \
+  --output_file output.wav
+```
 
 ## **📄 File Overview**
 
-> * **INSTALLATION.md**: Complete guide for setting up Python environments, C++ binaries, and system dependencies.  
-> * **training.md**: Step-by-step instructions for dataset preparation and model training with Piper.  
-> * **VERSION.md**: Version specification file.
+* **INSTALLATION.md**: Complete guide for setting up Python environments, C++ binaries, and system dependencies.
+* **training.md**: Step-by-step instructions for dataset preparation and model training with Piper.
+* **requirements.txt**: Python dependencies.
+* **VERSION.md**: Version specification file.
