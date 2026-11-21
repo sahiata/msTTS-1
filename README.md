@@ -29,7 +29,7 @@ Place your trained model files inside the models/ folder in the repository root:
 `├── README.md                   <-- Project overview and usage`  
 `├── training.md                 <-- Model training & fine-tuning guide`  
 `├── INSTALLATION.md             <-- Setup & dependency installation`  
-`└── VERSION                     <-- Project version tracking`
+`└── VERSION.md                  <-- Project version tracking`
 
 ## **🚀 Quick Start**
 
@@ -51,4 +51,4 @@ Once your model files are placed in models/, you can run Piper TTS via the comma
 
 > * **INSTALLATION.md**: Complete guide for setting up Python environments, C++ binaries, and system dependencies.  
 > * **training.md**: Step-by-step instructions for dataset preparation and model training with Piper.  
-> * **VERSION**: Version specification file.
+> * **VERSION.md**: Version specification file.
